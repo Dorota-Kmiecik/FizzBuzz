@@ -11,9 +11,8 @@ namespace FizzBuzz
     internal class FizzBuzz
     {
         public FizzBuzz()
-        {          
-
-        }
+        {
+        }   
         public void Calculation() 
         {
             try
