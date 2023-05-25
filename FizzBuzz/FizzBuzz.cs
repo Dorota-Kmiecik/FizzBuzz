@@ -11,26 +11,27 @@ namespace FizzBuzz
     internal class FizzBuzz
     {
         public FizzBuzz()
+        {          
 
+        }
+        public void Calculation() 
         {
             try
             {
-
-
                 while (true)
                 {
                     Console.WriteLine("Podaj jakas liczbe calkowita");
                     var number = int.Parse(Console.ReadLine());
-                    if (number % 3 == 0 & number % 5 == 0)
+                    if (number % 3 == 0 && number % 5 == 0)
                     {
                         Console.WriteLine("FizzBuzz");
                         break;
                     }
-                    else if (number % 3 == 0 & number % 5 != 0)
+                    else if (number % 3 == 0)
                     {
                         Console.WriteLine("Fizz");
                     }
-                    else if (number % 5 == 0 & number % 3 != 0)
+                    else if (number % 5 == 0)
                     {
                         Console.WriteLine("Buzz");
                     }
@@ -40,15 +41,14 @@ namespace FizzBuzz
                     }
                 }
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }
-            finally 
+            finally
             {
                 Console.ReadLine();
             }
-
-        }
+        }  
     }
 }

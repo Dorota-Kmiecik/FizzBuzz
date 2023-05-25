@@ -11,6 +11,7 @@ namespace FizzBuzz
         static void Main(string[] args)
         {
             var fizzbuzz = new FizzBuzz();
+            fizzbuzz.Calculation();
         }
     }
 }
